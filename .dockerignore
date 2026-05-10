@@ -1,0 +1,42 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+
+# Environment files (never bake secrets into image)
+.env
+*.env
+
+# Service account keys
+key.json
+service-account*.json
+
+# ChromaDB (mounted as volume)
+chroma_db/
+
+# HuggingFace model cache
+.cache/
+
+# Docker build files
+docker/
+
+# Evaluation artifacts
+evaluation/reports/
+
+# Tests and dev tools
+tests/
+*.md
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,212 @@
+[
+  {
+    "id": "rag_001",
+    "category": "RAG",
+    "input": "MacBook Air M2 có bao nhiêu GB RAM và giá bao nhiêu?",
+    "expected_output": "MacBook Air M2 có 3 tùy chọn RAM: 8 GB, 16 GB và 24 GB Unified Memory. Giá khởi điểm từ 27.990.000 ₫ (8 GB / 256 GB SSD) đến 46.990.000 ₫ (24 GB / 1 TB SSD).",
+    "retrieval_context": ["MacBook Air M2 (2023)... RAM: 8 GB / 16 GB / 24 GB"]
+  },
+  {
+    "id": "rag_002",
+    "category": "RAG",
+    "input": "MacBook Air M3 khác gì so với M2?",
+    "expected_output": "MacBook Air M3 sử dụng tiến trình 3nm (M2 dùng 5nm gen 2), nhanh hơn M2 khoảng 30%. M3 hỗ trợ 2 màn hình ngoài khi đậy nắp (M2 chỉ 1 màn), có tăng tốc phần cứng ray tracing và kết nối Wi-Fi 6E.",
+    "retrieval_context": ["MacBook Air M3 (2024)... tiến trình 3nm, nhanh hơn M2 ~30%"]
+  },
+  {
+    "id": "rag_003",
+    "category": "RAG",
+    "input": "MacBook Pro M3 Max giá bao nhiêu cấu hình 64GB RAM?",
+    "expected_output": "MacBook Pro 14 inch M3 Max cấu hình 64 GB RAM và 2 TB SSD có giá 109.990.000 ₫.",
+    "retrieval_context": ["MacBook Pro 14 inch M3 Max... 64 GB / 2 TB: 109.990.000 ₫"]
+  },
+  {
+    "id": "rag_004",
+    "category": "RAG",
+    "input": "Dell XPS 15 có thể nâng cấp RAM không?",
+    "expected_output": "Có, Dell XPS 15 9530 có 2 khe SODIMM DDR5, hỗ trợ nâng cấp lên tối đa 64 GB RAM.",
+    "retrieval_context": ["Dell XPS 15 có 2 khe SODIMM DDR5, có thể nâng cấp"]
+  },
+  {
+    "id": "rag_005",
+    "category": "RAG",
+    "input": "ASUS ROG Zephyrus G14 dùng chip gì, pin được bao lâu?",
+    "expected_output": "ASUS ROG Zephyrus G14 2024 dùng AMD Ryzen 9 8945HS (8 nhân, boost đến 5.2 GHz). Pin 73 Wh, dùng được khoảng 10 giờ khi làm việc văn phòng. Sạc qua 100W USB-C hoặc adapter 240W.",
+    "retrieval_context": ["ASUS ROG Zephyrus G14 2024... CPU AMD Ryzen 9 8945HS... Pin 73 Wh, 10 giờ"]
+  },
+  {
+    "id": "rag_006",
+    "category": "RAG",
+    "input": "RTX 4070 cần nguồn tối thiểu bao nhiêu watt?",
+    "expected_output": "NVIDIA GeForce RTX 4070 yêu cầu nguồn tối thiểu 650W PSU.",
+    "retrieval_context": ["RTX 4070... Nguồn yêu cầu: 650W PSU"]
+  },
+  {
+    "id": "rag_007",
+    "category": "RAG",
+    "input": "CPU Intel Core i7-13700K có bao nhiêu nhân luồng?",
+    "expected_output": "Intel Core i7-13700K có 16 nhân (8 nhân hiệu suất + 8 nhân tiết kiệm điện) và 24 luồng, xung nhịp boost lên đến 5.4 GHz.",
+    "retrieval_context": ["Intel Core i7-13700K... 16 nhân (8P + 8E) / 24 luồng... Boost 5.4 GHz"]
+  },
+  {
+    "id": "rag_008",
+    "category": "RAG",
+    "input": "Chính sách bảo hành MacBook tại TechGear là bao lâu?",
+    "expected_output": "Laptop MacBook được bảo hành 12 tháng chính hãng tại trung tâm bảo hành ủy quyền.",
+    "retrieval_context": ["Laptop (MacBook, Dell, ASUS, Lenovo)... 12 tháng chính hãng"]
+  },
+  {
+    "id": "rag_009",
+    "category": "RAG",
+    "input": "SSD Samsung 990 Pro có tốc độ đọc bao nhiêu?",
+    "expected_output": "Samsung 990 Pro 1 TB có tốc độ đọc tuần tự lên đến 7.450 MB/s và ghi 6.900 MB/s, sử dụng giao tiếp NVMe PCIe 4.0 x4.",
+    "retrieval_context": ["Samsung 990 Pro... Tốc độ đọc tuần tự: 7.450 MB/s... Tốc độ ghi: 6.900 MB/s"]
+  },
+  {
+    "id": "rag_010",
+    "category": "RAG",
+    "input": "Màn hình LG UltraGear 27GP850-B có tần số quét bao nhiêu Hz?",
+    "expected_output": "LG UltraGear 27GP850-B có tần số quét 165Hz (có thể OC lên 180Hz), tấm nền IPS 2560×1440px, thời gian phản hồi 1ms GtG. Giá 8.990.000 ₫.",
+    "retrieval_context": ["LG UltraGear 27GP850-B... 165Hz (OC 180Hz)... 1ms GtG"]
+  },
+  {
+    "id": "rag_011",
+    "category": "RAG",
+    "input": "Chính sách đổi trả của TechGear là bao nhiêu ngày?",
+    "expected_output": "TechGear áp dụng chính sách đổi trả 30 ngày. Sản phẩm còn nguyên hộp, nguyên tem, đầy đủ phụ kiện và có hóa đơn mua hàng là có thể đổi. Hoàn tiền 100% trong vòng 7 ngày nếu sản phẩm bị lỗi ngay từ hộp (DOA).",
+    "retrieval_context": ["TechGear áp dụng chính sách đổi trả 30 ngày... hoàn tiền 100% trong 7 ngày nếu DOA"]
+  },
+  {
+    "id": "rag_012",
+    "category": "RAG",
+    "input": "CPU AMD Ryzen 9 7950X giá bao nhiêu, socket gì?",
+    "expected_output": "AMD Ryzen 9 7950X giá 16.990.000 ₫, dùng socket AM5, có 16 nhân / 32 luồng, boost đến 5.7 GHz, hỗ trợ DDR5 và PCIe 5.0.",
+    "retrieval_context": ["AMD Ryzen 9 7950X... 16.990.000 ₫... Socket AM5... 16 nhân / 32 luồng"]
+  },
+  {
+    "id": "rag_013",
+    "category": "RAG",
+    "input": "Bảo hành màn hình laptop bị đốm sáng có được không?",
+    "expected_output": "Có, màn hình laptop bị đốm sáng do lỗi sản xuất được bảo hành. Tuy nhiên nếu màn hình bị vỡ do va đập thì không được bảo hành và sẽ tính phí sửa chữa.",
+    "retrieval_context": ["Màn hình bị ố vàng, đốm sáng do lỗi sản xuất: được bảo hành"]
+  },
+  {
+    "id": "rag_014",
+    "category": "RAG",
+    "input": "Chuột Logitech MX Master 3S pin dùng được bao lâu?",
+    "expected_output": "Logitech MX Master 3S sạc qua USB-C, pin dùng được đến 70 ngày mỗi lần sạc. Kết nối qua Bluetooth hoặc Logi Bolt USB.",
+    "retrieval_context": ["Logitech MX Master 3S... Pin: sạc USB-C, 70 ngày / lần sạc"]
+  },
+  {
+    "id": "rag_015",
+    "category": "RAG",
+    "input": "Quy trình bảo hành tại TechGear mất bao nhiêu ngày?",
+    "expected_output": "Quy trình bảo hành: (1) Tiếp nhận tại showroom hoặc gửi bưu điện; (2) Kiểm tra 1-2 ngày làm việc; (3) Sửa chữa 3-7 ngày (phần cứng) hoặc trong ngày (phần mềm), trường hợp gửi về hãng (Apple/ASUS/Dell) có thể 14-30 ngày; (4) Nhận hàng tại showroom hoặc giao về nhà miễn phí.",
+    "retrieval_context": ["Bước 2: Kiểm tra 1-2 ngày... Lỗi phần cứng: 3-7 ngày... Gửi hãng: 14-30 ngày"]
+  },
+  {
+    "id": "order_001",
+    "category": "Order",
+    "input": "Tôi muốn đặt mua MacBook Air M3",
+    "expected_output": "Để đặt hàng MacBook Air M3, tôi cần thu thập thêm thông tin của bạn. Bạn cho tôi biết tên của bạn là gì ạ?",
+    "retrieval_context": []
+  },
+  {
+    "id": "order_002",
+    "category": "Order",
+    "input": "Cho tôi đặt RTX 4070, tên tôi là Nguyễn Văn An, SĐT 0901234567",
+    "expected_output": "Cảm ơn bạn Nguyễn Văn An! Tôi xác nhận lại thông tin: Tên: Nguyễn Văn An, SĐT: 0901234567, Sản phẩm: RTX 4070. Thông tin này có chính xác không?",
+    "retrieval_context": []
+  },
+  {
+    "id": "order_003",
+    "category": "Order",
+    "input": "SĐT của tôi là 12345",
+    "expected_output": "Số điện thoại 12345 không hợp lệ. Vui lòng nhập lại số điện thoại 10 chữ số bắt đầu bằng 0 (ví dụ: 0901234567).",
+    "retrieval_context": []
+  },
+  {
+    "id": "order_004",
+    "category": "Order",
+    "input": "Tôi muốn tư vấn thêm về laptop trước khi đặt hàng",
+    "expected_output": "Tất nhiên! Bạn đang có nhu cầu dùng laptop cho mục đích gì ạ? (lập trình, đồ họa, gaming, văn phòng...) và ngân sách khoảng bao nhiêu để tôi tư vấn phù hợp nhất.",
+    "retrieval_context": []
+  },
+  {
+    "id": "order_005",
+    "category": "Order",
+    "input": "Để lại thông tin để nhân viên gọi lại cho tôi",
+    "expected_output": "Tất nhiên! Bạn cho tôi biết tên của bạn để tôi ghi nhận ạ?",
+    "retrieval_context": []
+  },
+  {
+    "id": "order_006",
+    "category": "Order",
+    "input": "Tên tôi là Trần Thị Bình",
+    "expected_output": "Vâng, bạn Trần Thị Bình. Cho tôi xin số điện thoại liên hệ của bạn ạ?",
+    "retrieval_context": []
+  },
+  {
+    "id": "order_007",
+    "category": "Order",
+    "input": "SĐT 0312345678, tôi cần tư vấn về Dell XPS 15",
+    "expected_output": "Cảm ơn! Tôi xác nhận thông tin: Tên: Trần Thị Bình, SĐT: 0312345678, Nhu cầu: tư vấn Dell XPS 15. Thông tin có đúng không để tôi lưu lại và nhân viên sẽ liên hệ lại ạ?",
+    "retrieval_context": []
+  },
+  {
+    "id": "order_008",
+    "category": "Order",
+    "input": "Đúng rồi, lưu giúp tôi nhé",
+    "expected_output": "Đơn hàng đã được ghi nhận thành công! Nhân viên TechGear sẽ liên hệ với bạn trong vòng 30 phút (trong giờ 8:00-22:00). Cảm ơn bạn đã tin tưởng TechGear!",
+    "retrieval_context": []
+  },
+  {
+    "id": "order_009",
+    "category": "Order",
+    "input": "Tôi muốn mua Kingston Fury Beast DDR5 32GB",
+    "expected_output": "Để đặt hàng Kingston Fury Beast DDR5 32GB, cho tôi biết tên của bạn ạ?",
+    "retrieval_context": []
+  },
+  {
+    "id": "order_010",
+    "category": "Order",
+    "input": "Đặt hàng cho địa chỉ 123 Lê Lợi, Q1",
+    "expected_output": "Tôi cần ghi nhận tên và số điện thoại của bạn trước ạ. Bạn cho tôi biết tên không?",
+    "retrieval_context": []
+  },
+  {
+    "id": "edge_001",
+    "category": "Edge",
+    "input": "Shop có bán iPhone 16 không?",
+    "expected_output": "Xin lỗi, TechGear hiện tập trung vào laptop, PC và linh kiện máy tính. Chúng tôi không kinh doanh điện thoại di động. Bạn có cần tư vấn sản phẩm laptop hoặc linh kiện nào không ạ?",
+    "retrieval_context": []
+  },
+  {
+    "id": "edge_002",
+    "category": "Edge",
+    "input": "asdfghjkl",
+    "expected_output": "Xin chào! Tôi là TechBot, trợ lý tư vấn của TechGear. Tôi không hiểu yêu cầu của bạn. Bạn cần tư vấn sản phẩm, hỏi về giá, bảo hành, hay muốn đặt hàng không ạ?",
+    "retrieval_context": []
+  },
+  {
+    "id": "edge_003",
+    "category": "Edge",
+    "input": "MacBook nào phù hợp nhất cho sinh viên với ngân sách 30 triệu?",
+    "expected_output": "Với ngân sách 30 triệu và dành cho sinh viên, MacBook Air M2 8GB/256GB (27.990.000 ₫) hoặc 8GB/512GB (32.990.000 ₫) là lựa chọn tốt nhất. Chip M2 đủ mạnh cho học tập, lập trình, pin 18 giờ, nhẹ 1.24kg.",
+    "retrieval_context": ["MacBook Air M2... 27.990.000 ₫ (8GB/256GB)... 32.990.000 ₫ (8GB/512GB)"]
+  },
+  {
+    "id": "edge_004",
+    "category": "Edge",
+    "input": "TechGear có trả góp không?",
+    "expected_output": "Xin lỗi, tôi không có thông tin chi tiết về chương trình trả góp hiện tại. Vui lòng liên hệ hotline 1800-TECHGEAR hoặc ghé showroom để được nhân viên tư vấn cụ thể về các gói trả góp 0%.",
+    "retrieval_context": []
+  },
+  {
+    "id": "edge_005",
+    "category": "Edge",
+    "input": "Laptop nào tốt nhất thế giới hiện nay?",
+    "expected_output": "Tùy thuộc vào nhu cầu sử dụng và ngân sách. Trong danh mục TechGear, một số lựa chọn hàng đầu: MacBook Pro M3 Max (sáng tạo/AI), Dell XPS 15 OLED (đa năng cao cấp), ThinkPad X1 Carbon (doanh nghiệp/di chuyển), ASUS ROG Zephyrus G14 (gaming + portable). Bạn dùng cho mục đích gì để tôi tư vấn cụ thể hơn ạ?",
+    "retrieval_context": ["MacBook Pro M3 Max...", "Dell XPS 15...", "ThinkPad X1 Carbon...", "ASUS ROG Zephyrus G14..."]
+  }
+]

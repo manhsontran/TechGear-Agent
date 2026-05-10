@@ -1,0 +1,35 @@
+# Core
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+pydantic==2.10.3
+pydantic-settings==2.6.1
+python-dotenv==1.0.1
+
+# LangChain / LangGraph
+langchain==0.3.13
+langchain-google-genai==2.1.4
+langchain-community==0.3.13
+langchain-chroma==0.1.4
+langgraph==0.2.60
+langsmith>=0.1.125,<0.3.0
+
+# Vector DB
+chromadb==0.5.23
+
+# Embeddings (offline, Vietnamese-friendly)
+sentence-transformers==3.3.1
+
+# Google Sheets
+gspread==6.1.4
+google-auth==2.36.0
+
+# Telegram
+httpx==0.28.1
+
+# Data processing
+pypdf==5.1.0
+python-multipart==0.0.20
+
+# Utilities
+tenacity==9.0.0
+structlog==24.4.0

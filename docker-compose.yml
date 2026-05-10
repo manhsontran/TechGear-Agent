@@ -1,0 +1,42 @@
+# ⚠️  Lần đầu chạy: docker compose --profile init up ingest
+# Sau đó: docker compose up -d
+services:
+  api:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    image: techgear-agent:latest
+    container_name: techgear-agent
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    volumes:
+      # Persist ChromaDB vectors across container restarts
+      - chroma_data:/app/chroma_db
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+
+  # Optional: run data ingestion as a one-off init container
+  ingest:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    image: techgear-agent:latest
+    container_name: techgear-ingest
+    env_file:
+      - .env
+    volumes:
+      - chroma_data:/app/chroma_db
+    command: ["python", "scripts/ingest_data.py", "--reset"]
+    profiles:
+      - init  # Only runs when: docker compose --profile init up ingest
+
+volumes:
+  chroma_data:
+    driver: local

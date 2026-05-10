@@ -1,0 +1,32 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+
+# Environment files (never bake secrets into image)
+.env
+*.env
+
+# ChromaDB (mounted as volume)
+chroma_db/
+
+# Evaluation artifacts
+evaluation/reports/
+
+# Tests and dev tools
+tests/
+*.md
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

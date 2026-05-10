@@ -1,0 +1,12 @@
+# Development & evaluation dependencies
+# Install: pip install -r requirements-dev.txt
+-r requirements.txt
+
+# Evaluation
+deepeval==2.3.4
+
+# Testing
+pytest==9.0.3
+pytest-anyio==0.0.0
+pytest-repeat==0.9.4
+pytest-xdist==3.8.0
